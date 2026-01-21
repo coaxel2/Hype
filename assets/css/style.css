@@ -148,7 +148,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     background: url('../assets/images/hero.jpg') center center/cover no-repeat;
-    color: white;
+    color: red;
     text-align: center;
     overflow: hidden;
 }
