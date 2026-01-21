@@ -147,8 +147,8 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../assets/images/hero.jpg') center center/cover no-repeat;
-    color: red;
+    background: url('../images/hero.jpg') center center/cover no-repeat;
+    color: white;
     text-align: center;
     overflow: hidden;
 }
@@ -159,7 +159,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.45);
 }
 
 .hero-fullscreen .hero-content {
@@ -167,6 +167,7 @@ nav a:hover {
     z-index: 2;
     max-width: 900px;
     padding: 0 20px;
+    
 }
 
 .hero-fullscreen .hero-content h2 {

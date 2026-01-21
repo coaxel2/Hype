@@ -10,8 +10,9 @@ include 'includes/header.php';
     <section class="hero-fullscreen">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2>Hypé</h2>
-            <p>Explorez les meilleures activités et lieux incontournables de Bordeaux</p>
+            <h2>
+                <img src="assets/images/logo/bblanc.svg" alt="Hypé" style="max-width: 320px; width: 100%; height: auto;">
+            </h2>
             <div class="hero-cta">
                 <a href="#activites" class="btn btn-primary">Découvrir</a>
                 <a href="about.php" class="btn btn-secondary">En savoir plus</a>
