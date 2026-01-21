@@ -6,10 +6,10 @@
 }
 
 :root {
-    --primary-color: #e57373;
+    --primary-color: #28253e;
     --secondary-color: #ef9a9a;
     --accent-color: #ffab91;
-    --dark-bg: #5d4e60;
+    --dark-bg: #28253e;
     --light-bg: #faf8f5;
     --text-color: #4a4a4a;
     --text-light: #999999;
@@ -132,11 +132,19 @@ nav a {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
 }
 
 nav a:hover {
     color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+nav a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 /* Hero Section Plein Écran */
@@ -467,15 +475,15 @@ nav a:hover {
 
 .btn-primary {
     background: white;
-    color: var(--primary-color);
+    color: var(--dark-bg);
     border-color: white;
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
-    background: var(--accent-color);
-    border-color: var(--accent-color);
+    background: white;
+    border-color: var(--light-bg);
     color: var(--dark-bg);
 }
 
@@ -487,8 +495,9 @@ nav a:hover {
 
 .btn-secondary:hover {
     background: white;
-    color: var(--primary-color);
+    color: var(--dark-bg);
     transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }
 
 /* Pages Contenu */
@@ -678,7 +687,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background: var(--dark-bg);
     color: white;
     padding: 30px 0;
     text-align: center;
