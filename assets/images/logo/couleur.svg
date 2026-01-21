@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 841.9 595.3">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #c0c9ee;
+      }
+
+      .st1 {
+        fill: #dd0303;
+      }
+    </style>
+  </defs>
+  <circle class="st0" cx="420.9" cy="297.6" r="143.8"/>
+  <g>
+    <path class="st1" d="M329.7,248.9h20.8v68.1h2.3v-68.1h20.8v108.5h-20.8v-21.7h-2.3v21.7h-20.8v-108.5Z"/>
+    <path class="st1" d="M375.9,338.1h21.9c.8,0,1.2-.7,1.2-2v-.3h-23.1v-86.9h20.8v68.1h2.3v-68.1h20.8v87.3c0,6.4-1.9,11.6-5.7,15.4-3.8,3.9-9.1,5.8-15.8,5.8h-22.4v-19.3Z"/>
+    <path class="st1" d="M422.1,248.9h43.9v80c0,6.4-1.9,11.6-5.7,15.4-3.8,3.9-9.1,5.8-15.8,5.8h-1.6v7.4h-20.8v-108.5ZM444.8,330.7c.2-.5.4-1.1.4-1.8v-61.2h-2.3v63.8h1c.4,0,.7-.3.9-.8Z"/>
+    <path class="st1" d="M468.3,250.6l43.9-2.5v8.8h-43.9v-6.4ZM468.3,259.3h43.9v55.4h-20.8v-36.7h-2.3v39h23.1v18.8h-23.1v2.3h23.1v19.3h-43.9v-98.2Z"/>
+  </g>
+</svg>
