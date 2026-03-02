@@ -18,7 +18,7 @@ include 'includes/header.php';
                     <h3>Nos coordonnées</h3>
                     <div class="info-item">
                         <h4>Email</h4>
-                        <p><a href="mailto:contact@bordeaux-activites.fr">contact@bordeaux-activites.fr</a></p>
+                        <p><a href="mailto:contact@bordeaux-activites.fr">contact@hype-bordeaux.fr</a></p>
                     </div>
                     <div class="info-item">
                         <h4>Adresse</h4>
