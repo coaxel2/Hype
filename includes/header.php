@@ -10,8 +10,8 @@
     <header>
         <div class="container">
             <a href="<?php echo SITE_URL; ?>/index.php" class="logo">
-                <img src="<?php echo SITE_URL; ?>/assets/images/logo/blanc.svg" alt="Logo Bordeaux Activités" class="logo-light">
-                <img src="<?php echo SITE_URL; ?>/assets/images/logo/noir.svg" alt="Logo Bordeaux Activités" class="logo-dark">
+                <img src="<?php echo SITE_URL; ?>/assets/images/logo/nnoir.svg" alt="Logo Bordeaux Activités" class="logo-light">
+                <img src="<?php echo SITE_URL; ?>/assets/images/logo/bblanc.svg" alt="Logo Bordeaux Activités" class="logo-dark">
             </a>
             <nav>
                 <ul>
