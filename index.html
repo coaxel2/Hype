@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypé - Bordeaux Activités</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo/nnoir.svg" alt="Logo Bordeaux Activités" class="logo-light">
+                <img src="assets/images/logo/bblanc.svg" alt="Logo Bordeaux Activités" class="logo-dark">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="about.html" class="">À propos</a></li>
+                    <li><a href="contact.html" class="">Contact</a></li>
+                    <li><a href="teams.html" class="">Équipe</a></li>
+                </ul>
+            </nav>
+    </header>
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = html.getAttribute('data-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                html.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+            });
+        }
+    </script>
+
+    <section class="hero-fullscreen">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>
+                <img src="assets/images/logo/bblanc.svg" alt="Hypé" style="max-width: 320px; width: 100%; height: auto;">
+            </h2>
+            <div class="hero-cta">
+                <a href="#activites" class="btn btn-primary">Découvrir</a>
+                <a href="about.html" class="btn btn-secondary">En savoir plus</a>
+            </div>
+        </div>
+        <a href="#activites" class="scroll-indicator">
+            <span>↓</span>
+        </a>
+    </section>
+
+    <section id="activites" class="reportages-grid">
+        <div class="container">
+            <h2>Nos dernières sorties</h2>
+            <div class="grid">
+                <article class="reportage-card">
+                    <a href="reportages/reportage-1.html">
+                        <div class="card-image">
+                            <img src="assets/images/reportages/cite-vin.jpg" alt="La Cité du Vin">
+                        </div>
+                        <div class="card-content">
+                            <h3>La Cité du Vin</h3>
+                            <p class="date">15/11/2025</p>
+                            <p class="location">Quai de Bacalan, Bordeaux</p>
+                            <p class="excerpt">Immersion dans le temple moderne de la culture viticole bordelaise.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="reportage-card">
+                    <a href="reportages/reportage-2.html">
+                        <div class="card-image">
+                            <img src="assets/images/reportages/quais.jpg" alt="Les Quais de Bordeaux">
+                        </div>
+                        <div class="card-content">
+                            <h3>Les Quais de Bordeaux</h3>
+                            <p class="date">08/11/2025</p>
+                            <p class="location">Quais de la Garonne, Bordeaux</p>
+                            <p class="excerpt">Balade le long des quais classés au patrimoine mondial de l&#039;UNESCO.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="reportage-card">
+                    <a href="reportages/reportage-3.html">
+                        <div class="card-image">
+                            <img src="assets/images/reportages/darwin.jpg" alt="Darwin Écosystème">
+                        </div>
+                        <div class="card-content">
+                            <h3>Darwin Écosystème</h3>
+                            <p class="date">28/10/2025</p>
+                            <p class="location">Rive Droite, Bordeaux</p>
+                            <p class="excerpt">L&#039;esprit alternatif et créatif de la rive droite bordelaise.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="reportage-card">
+                    <a href="reportages/reportage-4.html">
+                        <div class="card-image">
+                            <img src="assets/images/reportages/capucins.jpg" alt="Le Marché des Capucins">
+                        </div>
+                        <div class="card-content">
+                            <h3>Le Marché des Capucins</h3>
+                            <p class="date">20/10/2025</p>
+                            <p class="location">Place des Capucins, Bordeaux</p>
+                            <p class="excerpt">Le ventre gourmand de Bordeaux et son ambiance authentique.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="reportage-card">
+                    <a href="reportages/reportage-5.html">
+                        <div class="card-image">
+                            <img src="assets/images/reportages/bassins-lumieres.jpg" alt="Le Bassin des Lumières">
+                        </div>
+                        <div class="card-content">
+                            <h3>Le Bassin des Lumières</h3>
+                            <p class="date">12/10/2025</p>
+                            <p class="location">Base Sous-Marine, Bordeaux</p>
+                            <p class="excerpt">Art numérique immersif dans un lieu historique exceptionnel.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="reportage-card">
+                    <a href="reportages/reportage-6.html">
+                        <div class="card-image">
+                            <img src="assets/images/reportages/jardin-public.jpg" alt="Le Jardin Public">
+                        </div>
+                        <div class="card-content">
+                            <h3>Le Jardin Public</h3>
+                            <p class="date">05/10/2025</p>
+                            <p class="location">Centre-ville, Bordeaux</p>
+                            <p class="excerpt">Un havre de paix au cœur de la ville pour se ressourcer.</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Nos Reportages. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

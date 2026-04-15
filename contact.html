@@ -1,8 +1,43 @@
-<?php
-require_once 'config.php';
-$pageTitle = 'Contact';
-include 'includes/header.php';
-?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bordeaux Activités</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo/nnoir.svg" alt="Logo Bordeaux Activités" class="logo-light">
+                <img src="assets/images/logo/bblanc.svg" alt="Logo Bordeaux Activités" class="logo-dark">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="">Accueil</a></li>
+                    <li><a href="about.html" class="">À propos</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="teams.html" class="">Équipe</a></li>
+                </ul>
+            </nav>
+    </header>
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = html.getAttribute('data-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                html.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+            });
+        }
+    </script>
 
     <section class="page-hero">
         <div class="hero-content">
@@ -18,7 +53,7 @@ include 'includes/header.php';
                     <h3>Nos coordonnées</h3>
                     <div class="info-item">
                         <h4>Email</h4>
-                        <p><a href="mailto:contact@bordeaux-activites.fr">contact@hype-bordeaux.fr</a></p>
+                        <p><a href="mailto:contact@hype-bordeaux.fr">contact@hype-bordeaux.fr</a></p>
                     </div>
                     <div class="info-item">
                         <h4>Adresse</h4>
@@ -66,4 +101,10 @@ include 'includes/header.php';
         </div>
     </section>
 
-<?php include 'includes/footer.php'; ?>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Nos Reportages. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
