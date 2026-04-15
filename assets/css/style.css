@@ -157,7 +157,7 @@ header {
     right: 0;
     z-index: 1000;
     padding: var(--space-sm) 0;
-    background: rgba(246, 245, 250, 0.82);
+    background: rgba(246, 245, 250, 1);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--color-border);
@@ -165,7 +165,7 @@ header {
 }
 
 [data-theme="dark"] header {
-    background: rgba(21, 19, 31, 0.82);
+    background: rgba(21, 19, 31, 1);
 }
 
 header .container {
